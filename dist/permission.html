@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+	 <head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="css/style.min.css">
+	<title>Главная</title>
+</head>
+	<body>
+		<div class="wrap">
+		<header class="header">
+    <div class="header__body _container">
+        <img class="header__logo" src="img/logo.png" alt="">
+        <div class="header__icons">
+            <div class="header__icon">
+                <a href="permission.html" class="header__link">
+                    <span class="icon-user"></span>
+                    <span class="header__subtitle">
+                        Разрешения
+                    </span>
+                </a>
+            </div>
+            <div class="header__icon icon_reg_auth">
+                <span class="icon-user"></span>
+                <span class="header__subtitle">
+                    Войти
+                </span>
+            </div>
+        </div>
+    </div>
+</header>
+		<main class="content">
+			<div class="content__body _container-main">
+				<div class="content__buttons">
+					<form action="" method="post" class="content__form">
+						<input type="submit" class="content__button-checkout content__button-checkout_active" value="Оперативные"  name="operative-permissions">
+					</form>
+					<form action="" method="post" class="content__form">
+						<input type="submit" class="content__button-checkout" value="Архив" name="archive-permissions">
+					</form>
+				</div>
+				<div class="filter-content__funcs">
+					<div class="input button button-content filter">Фильтры</div>
+					<form method="post" class="filter-content__search">
+						<input type="text" class="input" placeholder="Поиск...">
+						<span class="icon-search"></span>
+						<input type="submit" hidden name="search__permission" class="permission-search">
+					</form>
+					<form action="" method="post">
+						<input type="submit" class="input button button-content" value="Создать">
+					</form>
+					<form action="" method="post">
+						<input type="submit" class="input button button-content" value="Создать на основе">
+						<input type="text" class="row-id-process" hidden name="id" id="">
+					</form>
+					<form action="" method="post">
+						<input type="submit" class="input button button-content" value="Править">
+						<input type="text" class="row-id-process" hidden name="id" id="">
+					</form>
+					<form action="" method="post">
+						<input type="submit" class="input button button-content" value="Удаление">
+						<input type="text" class="row-id-process" hidden name="id" id="">
+					</form>
+				</div>
+				<div class="content__table">
+					<div class="content__table table-content table-permission">
+						<div class="content__filter filter-content">
+							<!-- <div class="filter-content__block filter-block">
+								<div class="filter-content__list">
+									<div class="filter-content__item">
+										<div class="filter-content__date date-filter">
+											<div class="date-filter__block">
+												<span class="filter-content__span">Начальная дата</span> <input type="date">
+											</div>
+											<div class="date-filter__block">
+												<span class="filter-content__span">Конечная дата</span> <input type="date">
+											</div>
+										</div>
+									</div>
+									<div class="filter-content__item">
+										<div class="filter-content__buttons">
+											<form action="" method="post">
+												<input type="submit" class="input button filter-content__button" value="Применить">
+											</form>
+											<div class="input button filter-content__button close-filter">Закрыть</div>
+										</div>
+									</div>
+								</div>
+							</div> -->
+						</div>
+						<div class="table-content__row table-content__row_head table-permission__row_head">
+							<div class="table-content__col table-content__head table-permission__head">Заголовок 1</div>
+							<div class="table-content__col table-content__head table-permission__head">Заголовок 2</div>
+							<div class="table-content__col table-content__head table-permission__head">Заголовок 3</div>
+							<div class="table-content__col table-content__head table-permission__head">Заголовок 4</div>
+							<div class="table-content__col table-content__head table-permission__head">Заголовок 5</div>
+							<div class="table-content__col table-content__head table-permission__head">Заголовок 6</div>
+							<div class="table-content__col table-content__head table-permission__head">Заголовок 7</div>
+						</div>
+						<div class="table-content__row table-permission__row">
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 1">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 2">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 3">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 4">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 5">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 6">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 7">
+							</div>
+							<input type="text" class="row-id" name="id" hidden readonly value="1">
+						</div>
+						<div class="table-content__row table-permission__row">
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 1">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 2">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 3">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 4">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 5">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 6">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 7">
+							</div>
+							<input type="text" class="row-id" name="id" hidden readonly value="1">
+						</div>
+						<div class="table-content__row table-permission__row">
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 1">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 2">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 3">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 4">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 5">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 6">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 7">
+							</div>
+							<input type="text" class="row-id" name="id" hidden readonly value="1">
+						</div>
+						<div class="table-content__row table-permission__row">
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 1">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 2">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 3">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 4">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 5">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 6">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 7">
+							</div>
+							<input type="text" class="row-id" name="id" hidden readonly value="1">
+						</div>
+						<div class="table-content__row table-permission__row">
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 1">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 2">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 3">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 4">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 5">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 6">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 7">
+							</div>
+							<input type="text" class="row-id" name="id" hidden readonly value="1">
+						</div>
+						<div class="table-content__row table-permission__row">
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 1">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 2">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 3">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 4">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 5">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 6">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 7">
+							</div>
+							<input type="text" class="row-id" name="id" hidden readonly value="1">
+						</div>
+						<div class="table-content__row table-permission__row">
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 1">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 2">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 3">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 4">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 5">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 6">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 7">
+							</div>
+							<input type="text" class="row-id" name="id" hidden readonly value="1">
+						</div>
+						<div class="table-content__row table-permission__row">
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 1">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 2">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 3">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 4">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 5">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 6">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 7">
+							</div>
+							<input type="text" class="row-id" name="id" hidden readonly value="1">
+						</div>
+						<div class="table-content__row table-permission__row">
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 1">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 2">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 3">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 4">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 5">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 6">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 7">
+							</div>
+							<input type="text" class="row-id" name="id" hidden readonly value="1">
+						</div>
+						<div class="table-content__row table-permission__row">
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 1">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 2">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 3">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 4">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 5">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 6">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 7">
+							</div>
+							<input type="text" class="row-id" name="id" hidden readonly value="1">
+						</div>
+						<div class="table-content__row table-permission__row">
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 1">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 2">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 3">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 4">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 5">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 6">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 7">
+							</div>
+							<input type="text" class="row-id" name="id" hidden readonly value="1">
+						</div>
+						<div class="table-content__row table-permission__row">
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 1">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 2">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 3">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 4">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 5">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 6">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 7">
+							</div>
+							<input type="text" class="row-id" name="id" hidden readonly value="1">
+						</div>
+						<div class="table-content__row table-permission__row">
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 1">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 2">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 3">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 4">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 5">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 6">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 7">
+							</div>
+							<input type="text" class="row-id" name="id" hidden readonly value="1">
+						</div>
+						<div class="table-content__row table-permission__row">
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 1">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 2">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 3">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 4">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 5">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 6">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 7">
+							</div>
+							<input type="text" class="row-id" name="id" hidden readonly value="1">
+						</div>
+						<div class="table-content__row table-permission__row">
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 1">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 2">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 3">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 4">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 5">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 6">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 7">
+							</div>
+							<input type="text" class="row-id" name="id" hidden readonly value="1">
+						</div>
+						<div class="table-content__row table-permission__row">
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 1">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 2">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 3">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 4">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 5">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 6">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 7">
+							</div>
+							<input type="text" class="row-id" name="id" hidden readonly value="1">
+						</div>
+						<div class="table-content__row table-permission__row">
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 1">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 2">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 3">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 4">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 5">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 6">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 7">
+							</div>
+							<input type="text" class="row-id" name="id" hidden readonly value="1">
+						</div>
+
+												<div class="table-content__row table-permission__row">
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 1">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 2">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 3">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 4">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 5">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 6">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 7">
+							</div>
+							<input type="text" class="row-id" name="id" hidden readonly value="1">
+						</div>
+												<div class="table-content__row table-permission__row">
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 1">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 2">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 3">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 4">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 5">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 6">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 7">
+							</div>
+							<input type="text" class="row-id" name="id" hidden readonly value="1">
+						</div>
+						<div class="table-content__row table-permission__row">
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 1">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 2">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 3">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 4">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 5">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 6">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 7">
+							</div>
+							<input type="text" class="row-id" name="id" hidden readonly value="1">
+						</div>
+						<div class="table-content__row table-permission__row">
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 1">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 2">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 3">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 4">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 5">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 6">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 7">
+							</div>
+							<input type="text" class="row-id" name="id" hidden readonly value="1">
+						</div>
+						<div class="table-content__row table-permission__row">
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 1">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 2">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 3">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 4">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 5">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 6">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 7">
+							</div>
+							<input type="text" class="row-id" name="id" hidden readonly value="1">
+						</div>
+						<div class="table-content__row table-permission__row">
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 1">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 2">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 3">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 4">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 5">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 6">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 7">
+							</div>
+							<input type="text" class="row-id" name="id" hidden readonly value="1">
+						</div>
+						<div class="table-content__row table-permission__row">
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 1">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 2">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 3">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 4">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 5">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 6">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 7">
+							</div>
+							<input type="text" class="row-id" name="id" hidden readonly value="1">
+						</div>
+						<div class="table-content__row table-permission__row">
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 1">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 2">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 3">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 4">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 5">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 6">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 7">
+							</div>
+							<input type="text" class="row-id" name="id" hidden readonly value="1">
+						</div>
+						<div class="table-content__row table-permission__row">
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 1">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 2">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 3">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 4">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 5">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 6">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 7">
+							</div>
+							<input type="text" class="row-id" name="id" hidden readonly value="1">
+						</div>
+						<div class="table-content__row table-permission__row">
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 1">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 2">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 3">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 4">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 5">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 6">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 7">
+							</div>
+							<input type="text" class="row-id" name="id" hidden readonly value="1">
+						</div>
+						<div class="table-content__row table-permission__row">
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 1">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 2">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 3">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 4">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 5">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 6">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 7">
+							</div>
+							<input type="text" class="row-id" name="id" hidden readonly value="1">
+						</div>
+						<div class="table-content__row table-permission__row">
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 1">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 2">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 3">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 4">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 5">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 6">
+							</div>
+							<div class="table-content__col table-col table-permission__col">
+								<input type="text" readonly value="Ячейка 7">
+							</div>
+							<input type="text" class="row-id" name="id" hidden readonly value="1">
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+    <div class="footer__body _container">
+        <address class="footer__mail">admin@gmail.com</address>
+        <div class="footer__copy">&copy; ПАО "Транснефть" 2022</div>
+        <div class="footer__links">
+            <a href="https://vk.com/transneftofficial" target="_blank" class="icon-vk footer__link"></a>
+            <a href="https://www.facebook.com/TRANSNEFT" target="_blank" class="icon-facebook footer__link"></a>
+            <a href="https://twitter.com/transneftRu" target="_blank" class="icon-twitter footer__link"></a>
+            <a href="https://www.instagram.com/transneftru/" target="_blank" class="icon-instagram-second footer__link"></a>
+            <a href="https://t.me/transneftofficial" target="_blank" class="icon-telegram footer__link"></a>
+            <a href="https://invite.viber.com/?g2=AQAJmjbSlaVw3kiGiek7m4%2BbhLm0X01ggdP5DAoiuQUSUvejqFEpi8Rp5Wy6uqI7&lang=ru" target="_blank" class="icon-viber footer__link"></a>
+            <a href="https://www.youtube.com/user/transneftru" target="_blank" class="icon-youtube footer__link"></a>
+        </div>
+    </div>
+</footer>
+		</div>
+		<script src="js/app.min.js"></script>
+	</body>
+</html>

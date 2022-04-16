@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('html/head.html',{
+	"title":"Главная"
+	})
+	<body>
+		<div class="wrap">
+		@@include('html/header.html',{})
+		<main class="content">
+			<div class="content__body _container">
+                <div class="navigation-chain">
+                    <div class="navigation-chain__item"><a href="permission.html">Разрешения / </a></div>
+                    <div class="navigation-chain__item"><a href="permission_add.html">Добавление разрешения /</a></div>
+                    <div class="navigation-chain__item navigation-chain__item_active">Ответственные</div>
+                </div>
+                <div class="content__hierarchy hierarchy-content">
+                    <div class="hierarchy-content__list" parent="0">
+                        <div class="hierarchy-content__item" idDivWithChild="1">АО "Транснефть - Север" 1</div>
+                        <div class="hierarchy-content__item" idDivWithChild="2">АО "Транснефть - Север" 2</div>
+                    </div>
+                    <div class="hierarchy-content__list" parent="1">
+                        <div class="hierarchy-content__item" idDivWithChild="3">АУП 1</div>
+                        <div class="hierarchy-content__item" idDivWithChild="4">РНУ Усинское 1</div>
+                    </div>
+                    <div class="hierarchy-content__list" parent="2">
+                        <div class="hierarchy-content__item" idDivWithChild="5">АУП 2</div>
+                        <div class="hierarchy-content__item" idDivWithChild="6">РНУ Усинское 2</div>
+                    </div>
+                    <div class="hierarchy-content__list" parent="3">
+                        <div class="hierarchy-content__item" idDivWithoutChild="3">Носов 1</div>
+                        <div class="hierarchy-content__item" idDivWithoutChild="4">Чухломин 1</div>
+                    </div>
+                    <div class="hierarchy-content__list" parent="4">
+                        <div class="hierarchy-content__item" idDivWithoutChild="5">Носов 2</div>
+                        <div class="hierarchy-content__item" idDivWithoutChild="6">Чухломин 2</div>
+                    </div>
+                    <div class="hierarchy-content__list" parent="5">
+                        <div class="hierarchy-content__item" idDivWithoutChild="7">Носов 3</div>
+                        <div class="hierarchy-content__item" idDivWithoutChild="8">Чухломин 3</div>
+                    </div>
+                    <div class="hierarchy-content__list" parent="6">
+                        <div class="hierarchy-content__item" idDivWithoutChild="9">Носов 4</div>
+                        <div class="hierarchy-content__item" idDivWithoutChild="10">Чухломин 4</div>
+                    </div>
+                </div>
+                <form method="post" class="content__responsibles">
+                    <div class="content__responsible responsible-content">
+                        <div class="custom-select responsible-content__block-select">
+							<select class="responsible-content__select">
+							  <option value="0">Подразделение 1</option>
+							</select>
+						</div>
+                        <div class="custom-select responsible-content__block-select">
+							<select class="responsible-content__select">
+							  <option value="0">Подразделение 2</option>
+							</select>
+						</div>
+                        <div class="custom-select responsible-content__block-select">
+							<select class="responsible-content__select">
+							  <option value="0">Сотрудники</option>
+							</select>
+						</div>
+                        <input type="submit" class="input button responsible-content__submit" value="Сохранить">
+                    </div>
+                </form>
+			</div>
+		</main>
+		@@include('html/footer.html',{})
+		</div>
+		<script src="js/app.min.js"></script>
+	</body>
+</html>

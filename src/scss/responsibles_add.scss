@@ -1,0 +1,13 @@
+.responsible-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 40px;
+
+    &__block-select {
+        width: 300px;
+    }
+
+    &__submit {
+        width: 300px;
+    }
+}
