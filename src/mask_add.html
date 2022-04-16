@@ -12,9 +12,9 @@
 			@@include('html/header.html',{})
 			<main class="content">
                 <div class="content__body">
-					<div class="content__search-box">
+					<div class="content-mask__search-box">
 						<div class="content-mask__search">
-							<div class="input button button-content filter">Фильтры</div>
+							<div class="input button button-content ">Фильтры</div>
 							<form method="post" class="filter-content-mask__search">
 								<input type="text" class="input" placeholder="Поиск...">
 								<span class="icon-search"></span>
@@ -24,24 +24,10 @@
 								Добавить
 							</div>
 						</div>
-						<div class="content__search search">
-							<div class="filter-content__block filter-block">
-								<div class="filter-content__list">
-									<div class="filter-content__item">
-										<div class="filter-content__buttons">
-											<form action="" method="post">
-												<input type="submit" class="input button filter-content__button" value="Применить">
-											</form>
-											<div class="input button filter-content__button close-filter">Закрыть</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
 					</div>
 					<div class="form-mask">
 						<form method="post" class="content-mask__table table-content-mask table-systems">
-							<div class="table-content-mask__rows table-content__row_head">
+							<div class="table-content-mask__rows table-content-mask__row_head">
 								<div class="table-content-mask__col table-content-mask__head" name="add-system">Выбрать</div>
 								<div class="table-content-mask__col table-content-mask__head" name="system">Система</div>
 								<div class="table-content-mask__col table-content-mask__head" name="ty">ТУ/НПС</div>
